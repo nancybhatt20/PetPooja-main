@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            border: 2px solid #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+            color: white;
+        }
+        .input-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            background: none;
+            color: white;
+        }
+        .login-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+    <script>
+        function redirectToIndex(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'index.html'; // Redirect to main index page
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="redirectToIndex(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>

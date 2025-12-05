@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> PetPooja </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+      body {
+          background-color: black;
+          color: white;
+      }
+      .form-control {
+          background-color: black;
+          color: white;
+          border: 1px solid white;
+      }
+      .form-control::placeholder {
+          color: white;
+      }
+      .form-label {
+          color: white;
+      }
+      .btn-primary {
+          background-color: white;
+          color: black;
+          border: 1px solid white;
+      }
+      .btn-primary:hover {
+          background-color: gray;
+          color: black;
+      }
+  </style>
+</head>
+
+<body>
+
+        <!-- Navbar -->
+        <header class="header_section">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    PetPooja
+                  </span>
+                </a>
+      
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  mx-auto ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                      <a class="nav-link" href="recipe.html">Recipe Generator</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="waste_prediction.html">Waste Prediction</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="food-detection.html">Food Spoilage Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer.html">Estimate Customers</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Recipe Generator</h2>
+        <p class="text-center">Select the ingredients you have, and we'll suggest a recipe!</p>
+
+        <form id="recipeForm">
+            <div class="mb-3">
+                <label class="form-label">Select Ingredients:</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Vegetables</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="potato" name="ingredients" value="Potato">
+                            <label class="form-check-label" for="potato">Potato</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="tomato" name="ingredients" value="Tomato">
+                            <label class="form-check-label" for="tomato">Tomato</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="onion" name="ingredients" value="Onion">
+                            <label class="form-check-label" for="onion">Onion</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="carrot" name="ingredients" value="Carrot">
+                            <label class="form-check-label" for="carrot">Carrot</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="capsicum" name="ingredients" value="Capsicum">
+                            <label class="form-check-label" for="capsicum">Capsicum</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Masalas</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="turmeric" name="ingredients" value="Turmeric">
+                            <label class="form-check-label" for="turmeric">Turmeric</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="garam_masala" name="ingredients" value="Garam Masala">
+                            <label class="form-check-label" for="garam_masala">Garam Masala</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="chili_powder" name="ingredients" value="Chili Powder">
+                            <label class="form-check-label" for="chili_powder">Chili Powder</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="coriander" name="ingredients" value="Coriander Powder">
+                            <label class="form-check-label" for="coriander">Coriander Powder</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cumin" name="ingredients" value="Cumin Seeds">
+                            <label class="form-check-label" for="cumin">Cumin Seeds</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-suggest" onclick="generateRecipe()">Suggest Today’s Special</button>
+        </form>
+
+        <div id="recipeOutput" class="mt-4 p-3 bg-light border rounded" style="display: none;">
+            <h4>Today's Special Recipe:</h4>
+            <p id="recipeText"></p>
+        </div>
+    </div>
+
+    <script>
+        function generateRecipe() {
+            let selectedIngredients = [];
+            document.querySelectorAll('input[name="ingredients"]:checked').forEach((checkbox) => {
+                selectedIngredients.push(checkbox.value);
+            });
+
+            if (selectedIngredients.length === 0) {
+                alert("Please select at least one ingredient!");
+                return;
+            }
+
+            let recipes = {"Potato, Tomato, Onion": "Aloo Tamatar Sabzi - A simple yet delicious curry with tomatoes and potatoes.",
+                "Tomato, Onion, Garam Masala": "Spicy Onion Tomato Masala - A tangy and spicy dish for rice or chapati.",
+                "Potato, Chili Powder, Turmeric": "Spicy Aloo Fry - A crispy, spicy potato dish with turmeric and chili powder.",
+                "Carrot, Capsicum, Garam Masala": "Capsicum Carrot Stir Fry - A healthy and flavorful stir-fry.",
+                "Onion, Garam Masala, Chili Powder": "Masala Onion Fry - Quick and flavorful side dish with Indian spices.",
+                "Carrot, Tomato, Cumin Seeds": "Carrot Tomato Soup - A rich and nutritious soup with mild spices.",
+                "Potato, Coriander Powder, Cumin Seeds": "Aloo Jeera - A classic cumin-spiced potato dish.",
+                "Capsicum, Onion, Chili Powder": "Spicy Capsicum Masala - A hot and tangy capsicum dish."};
+
+            let recipeFound = "Sorry, we couldn't find an exact match. Try selecting more ingredients!";
+            
+            Object.keys(recipes).forEach(key => {
+                let keyIngredients = key.split(", ");
+                if (keyIngredients.every(ing => selectedIngredients.includes(ing))) {
+                    recipeFound = recipes[key];
+                }
+            });
+
+            document.getElementById("recipeOutput").style.display = "block";
+            document.getElementById("recipeText").innerText = recipeFound;
+        }
+    </script>
+</body>
+</html>
